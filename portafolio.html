@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingeniería TI, Experto en IA, Ciberseguridad & Agentes WhatsApp | Chillán - Ñuble</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#eef8ff',
+              100: '#d8eeff',
+              500: '#0088ff',
+              600: '#006ed4',
+              700: '#0055a6',
+              900: '#002b59',
+            },
+            cyber: {
+              400: '#38bdf8',
+              500: '#0284c7',
+              900: '#082f49',
+            },
+            dark: {
+              950: '#070a11',
+              900: '#0b0f19',
+              800: '#111827',
+              700: '#1f2937',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-card {
+      background: rgba(17, 24, 39, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .gradient-border {
+      position: relative;
+      border-radius: 1.25rem;
+      background: linear-gradient(135deg, rgba(0, 136, 255, 0.4), rgba(16, 185, 129, 0.35), rgba(168, 85, 247, 0.25));
+      padding: 1px;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #38bdf8, #34d399, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .cyber-glow {
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.15);
+    }
+  </style>
+</head>
+<body class="bg-dark-950 text-slate-200 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-dark-950/85 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 via-brand-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-emerald-500/20">
+          <i data-lucide="shield-check" class="text-white w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="text-xl font-bold text-white tracking-tight">TI &bull; IA &bull; CIBERSEGURIDAD</span>
+          <span class="block text-xs text-emerald-400 font-mono font-medium">Chillán &middot; Región de Ñuble</span>
+        </div>
+      </div>
+
+      <div class="hidden lg:flex items-center space-x-6 text-sm font-medium text-slate-300">
+        <a href="#ciberseguridad" class="hover:text-cyber-400 transition-colors flex items-center gap-1"><i data-lucide="shield" class="w-4 h-4 text-cyber-400"></i> Ciberseguridad & 2FA</a>
+        <a href="#agentes-whatsapp" class="hover:text-emerald-400 transition-colors flex items-center gap-1"><i data-lucide="bot" class="w-4 h-4 text-emerald-400"></i> Agentes WhatsApp IA</a>
+        <a href="#sistemas" class="hover:text-brand-400 transition-colors">Sistemas RRHH & QR</a>
+        <a href="#excel-ia" class="hover:text-emerald-400 transition-colors">Excel con IA</a>
+        <a href="#ia-creative" class="hover:text-purple-400 transition-colors">Media & Modelos IA</a>
+        <a href="#infraestructura" class="hover:text-brand-400 transition-colors">Infraestructura</a>
+      </div>
+
+      <a href="https://wa.me/56900000000?text=Hola,%20me%20gustar%C3%ADa%20evaluar%20una%20soluci%C3%B3n%20en%20IA,%20Ciberseguridad%20o%20Sistemas%20para%20mi%20empresa" target="_blank" class="flex items-center space-x-2 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white px-5 py-2.5 rounded-xl font-semibold text-sm shadow-lg shadow-emerald-500/20 transition-all transform hover:-translate-y-0.5">
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span>Hablar por WhatsApp</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-36 pb-20 overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.18),transparent_50%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(0,136,255,0.18),transparent_50%)]"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-left">
+          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold tracking-wide font-mono">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>EXPERTO EN INTELIGENCIA ARTIFICIAL &bull; CIBERSEGURIDAD &bull; INGENIERÍA TI</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+            Ingeniería en IA, <br/>
+            <span class="gradient-text">Ciberseguridad & Automatización</span>
+          </h1>
+
+          <p class="text-lg text-slate-300 leading-relaxed max-w-2xl">
+            Protegemos y modernizamos tu empresa: blindaje perimetral contra ataques y filtraciones, despliegue de autenticación 2FA, agentes de WhatsApp con IA para turnos y clientes, sistemas de RRHH, control de inventario con QR y auditoría masiva de datos en segundos.
+          </p>
+
+          <div class="pt-2 flex flex-wrap items-center gap-4">
+            <a href="#ciberseguridad" class="bg-cyan-600 hover:bg-cyan-500 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg shadow-cyan-600/30 transition-all flex items-center space-x-2">
+              <i data-lucide="shield-alert" class="w-5 h-5"></i>
+              <span>Ciberseguridad & Blindaje</span>
+            </a>
+            <a href="#agentes-whatsapp" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg shadow-emerald-600/30 transition-all flex items-center space-x-2">
+              <i data-lucide="bot" class="w-5 h-5"></i>
+              <span>Agentes WhatsApp IA</span>
+            </a>
+          </div>
+
+          <!-- Proof stats -->
+          <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6">
+            <div>
+              <div class="text-2xl sm:text-3xl font-bold text-cyan-400 font-mono">100%</div>
+              <div class="text-xs sm:text-sm text-slate-400">Datos Blindados & 2FA</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-bold text-emerald-400 font-mono">24/7</div>
+              <div class="text-xs sm:text-sm text-slate-400">Agentes Autónomos IA</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-bold text-brand-400 font-mono">Local</div>
+              <div class="text-xs sm:text-sm text-slate-400">Presencia en Ñuble</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO MOCKUP: Live SOC / Cyber & AI Security Center -->
+        <div class="lg:col-span-5">
+          <div class="gradient-border shadow-2xl">
+            <div class="bg-dark-900 rounded-2xl p-5 space-y-3.5 border border-slate-700/50 font-mono text-xs">
+              
+              <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-8 h-8 rounded-full bg-cyan-600/20 text-cyan-400 flex items-center justify-center font-bold border border-cyan-500/30">
+                    <i data-lucide="shield-check" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <p class="text-xs font-bold text-white">CENTRO DE OPERACIONES & SEGURIDAD</p>
+                    <p class="text-[10px] text-emerald-400 font-mono">VLANs Seguras &bull; Firewall Activo</p>
+                  </div>
+                </div>
+                <span class="px-2 py-0.5 rounded text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">PROTEGIDO</span>
+              </div>
+
+              <!-- Cyber Status indicators -->
+              <div class="grid grid-cols-2 gap-2 text-[11px] font-sans">
+                <div class="bg-dark-950 p-2.5 rounded-xl border border-slate-800">
+                  <span class="text-slate-400 block text-[10px]">Autenticación 2FA</span>
+                  <span class="text-white font-bold flex items-center gap-1 mt-0.5"><i data-lucide="key" class="w-3.5 h-3.5 text-emerald-400"></i> Activa en 100% Usuarios</span>
+                </div>
+                <div class="bg-dark-950 p-2.5 rounded-xl border border-slate-800">
+                  <span class="text-slate-400 block text-[10px]">Filtración de Datos</span>
+                  <span class="text-white font-bold flex items-center gap-1 mt-0.5"><i data-lucide="lock" class="w-3.5 h-3.5 text-cyan-400"></i> 0 Amenazas Detectadas</span>
+                </div>
+              </div>
+
+              <!-- Terminal SOC Event Log -->
+              <div class="bg-slate-950 rounded-xl p-3 border border-slate-800 space-y-1.5 text-[11px]">
+                <div class="text-cyan-400 flex items-center justify-between">
+                  <span>&gt; SOC_AUDIT_REALTIME:</span>
+                  <span class="text-[10px] text-slate-500">hace 5s</span>
+                </div>
+                <p class="text-slate-300 bg-dark-900/90 p-2 rounded border border-slate-800 font-mono">
+                  [OK] Tráfico cifrado SSL/TLS. Servidores locales aislados de redes públicas. Políticas de acceso estrictas aplicadas.
+                </p>
+              </div>
+
+              <div class="flex items-center justify-between pt-1 text-[11px] text-slate-400 font-sans">
+                <span class="flex items-center gap-1 text-emerald-400"><i data-lucide="check-circle" class="w-3.5 h-3.5"></i> Cumplimiento Normativo de Privacidad</span>
+                <span class="font-mono text-slate-400">Chillán</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN EXPERTO: CIBERSEGURIDAD & PROTECCIÓN EMPRESARIAL -->
+  <section id="ciberseguridad" class="py-24 bg-dark-900/80 border-y border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 font-mono">
+          DEFENSA DIGITAL & PROTECCIÓN DE ACTIVOS
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Experto en Ciberseguridad & Privacidad</h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Una filtración de datos, un ransomware o un robo de contraseñas puede paralizar tu empresa en minutos. Diseñamos e implementamos una arquitectura de seguridad blindada para proteger tu negocio.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Pillar 1: 2FA & Control de Acceso -->
+        <div class="glass-card rounded-2xl p-6 hover:border-cyan-500/50 transition-all group space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center group-hover:bg-cyan-500 group-hover:text-white transition-all">
+            <i data-lucide="key" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">Autenticación 2FA & Acceso Seguro</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Implementación de doble factor de autenticación (2FA) obligatorio para sistemas críticos, plataformas clínicas y portales administrativos.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 pt-2 border-t border-slate-800">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Cero accesos no autorizados</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Tokens seguros & Apps 2FA</li>
+          </ul>
+        </div>
+
+        <!-- Pillar 2: Segmentación VLAN & Redes -->
+        <div class="glass-card rounded-2xl p-6 hover:border-brand-500/50 transition-all group space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center group-hover:bg-brand-500 group-hover:text-white transition-all">
+            <i data-lucide="network" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">Segmentación de Redes (VLANs)</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Aislamiento de áreas críticas: los computadores de visitas y funcionarios generales jamás tienen acceso directo a la base de datos o servidores contables.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 pt-2 border-t border-slate-800">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Firewalls configurados a medida</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Contención de ataques e intrusiones</li>
+          </ul>
+        </div>
+
+        <!-- Pillar 3: Respaldos Inmutables -->
+        <div class="glass-card rounded-2xl p-6 hover:border-emerald-500/50 transition-all group space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all">
+            <i data-lucide="hard-drive-download" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">Respaldos Automáticos Anti-Ransomware</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Copias de seguridad automáticas cifradas en ubicaciones locales y remotas desconectadas para garantizar recuperación en minutos ante cualquier siniestro.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 pt-2 border-t border-slate-800">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Recuperación ante desastres (DRP)</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Cifrado de nivel bancario</li>
+          </ul>
+        </div>
+
+        <!-- Pillar 4: Auditoría & Ética -->
+        <div class="glass-card rounded-2xl p-6 hover:border-purple-500/50 transition-all group space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center group-hover:bg-purple-500 group-hover:text-white transition-all">
+            <i data-lucide="shield-alert" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">Auditoría de Vulnerabilidades</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Evaluación técnica de puertos abiertos, contraseñas débiles, software desactualizado y capacitación al personal contra ataques de phishing e ingeniería social.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-2 pt-2 border-t border-slate-800">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> Test de vulnerabilidades periódico</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> Capacitación preventiva a usuarios</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN DEDICADA: AGENTES DE WHATSAPP CON IA (CASOS Y DEMOS) -->
+  <section id="agentes-whatsapp" class="py-24 bg-dark-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-mono">
+          AUTOMATIZACIÓN CONVERSACIONAL CON IA
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Agentes de WhatsApp Inteligentes</h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          No son chatbots con menús rígidos de "marque 1 o marque 2". Son <strong>agentes con IA y modelos de lenguaje</strong> que comprenden lo que el usuario escribe, consultan tus bases de datos y resuelven solicitudes al instante.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Agente 1: Confirmación de Citas & Agenda -->
+        <div class="bg-dark-900 rounded-3xl p-6 border border-emerald-500/30 flex flex-col justify-between space-y-6 hover:border-emerald-500/60 transition-all shadow-xl">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+                <i data-lucide="calendar-heart" class="w-6 h-6"></i>
+              </div>
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-mono bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">PRODUCCIÓN</span>
+            </div>
+
+            <h3 class="text-xl font-bold text-white">Agente de Citas & Agenda Médica</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Conectado a la base de datos de pacientes. Envía recordatorios automáticos, gestiona confirmaciones o cancelaciones en lenguaje natural y libera cupos en tiempo real para reducir el ausentismo a cero.
+            </p>
+
+            <div class="bg-slate-950 rounded-xl p-3 border border-slate-800 text-xs space-y-2 font-mono">
+              <div class="text-emerald-400 text-[11px]">&gt; Bot: "Hola María, tienes cita dental mañana 11:00 AM."</div>
+              <div class="text-slate-300 text-[11px]">&gt; Paciente: "Pucha no puedo ir, ¿se puede cancelar?"</div>
+              <div class="text-brand-300 text-[11px]">&gt; Bot: "Cita cancelada y cupo liberado en sistema. Gracias por avisar."</div>
+            </div>
+          </div>
+
+          <div class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Integración PostgreSQL / MySQL / SQL</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Node.js + Railway + Servidores seguros</div>
+          </div>
+        </div>
+
+        <!-- Agente 2: OCR & Rendición de Choferes / Flotas -->
+        <div class="bg-dark-900 rounded-3xl p-6 border border-brand-500/30 flex flex-col justify-between space-y-6 hover:border-brand-500/60 transition-all shadow-xl">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl bg-brand-500/10 text-brand-400 flex items-center justify-center">
+                <i data-lucide="truck" class="w-6 h-6"></i>
+              </div>
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-mono bg-brand-500/20 text-brand-400 border border-brand-500/30">LOGÍSTICA & FLOTAS</span>
+            </div>
+
+            <h3 class="text-xl font-bold text-white">Agente de Rendiciones & Choferes</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              El chofer envía una foto de la boleta de combustible o peaje. La IA extrae los montos, litros y estación con OCR, valida el odómetro de la máquina y cuadra la contabilidad al instante.
+            </p>
+
+            <div class="bg-slate-950 rounded-xl p-3 border border-slate-800 text-xs space-y-2 font-mono">
+              <div class="text-slate-300 text-[11px]">&gt; Chofer: [Foto Boleta $85.000 Copec]</div>
+              <div class="text-brand-400 text-[11px]">&gt; IA OCR: "Leído: 72.4 Lts &middot; Diésel."</div>
+              <div class="text-emerald-400 text-[11px]">&gt; IA: "Rendición cargada a Bus #08. Rendimiento OK."</div>
+            </div>
+          </div>
+
+          <div class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Visión artificial para fotos arrugadas</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Cero boletas perdidas a fin de mes</div>
+          </div>
+        </div>
+
+        <!-- Agente 3: Atención al Cliente & Ventas 24/7 -->
+        <div class="bg-dark-900 rounded-3xl p-6 border border-purple-500/30 flex flex-col justify-between space-y-6 hover:border-purple-500/60 transition-all shadow-xl">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="w-12 h-12 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center">
+                <i data-lucide="sparkles" class="w-6 h-6"></i>
+              </div>
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-mono bg-purple-500/20 text-purple-400 border border-purple-500/30">VENTAS & SOPORTE</span>
+            </div>
+
+            <h3 class="text-xl font-bold text-white">Agente de Atención Comercial 24/7</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Atiende consultas sobre servicios, entrega catálogos, responde dudas frecuentes y califica prospectos para pasarlos listos al equipo de ventas sin perder clientes fuera de horario.
+            </p>
+
+            <div class="bg-slate-950 rounded-xl p-3 border border-slate-800 text-xs space-y-2 font-mono">
+              <div class="text-slate-300 text-[11px]">&gt; Cliente: "¿Qué servicios de transporte tienen en Ñuble?"</div>
+              <div class="text-purple-300 text-[11px]">&gt; IA: "Atendemos faenas, ejecutivos y turnos 24/7..."</div>
+              <div class="text-emerald-400 text-[11px]">&gt; IA: "¿De cuántos pasajeros es tu grupo para cotizar?"</div>
+            </div>
+          </div>
+
+          <div class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Lenguaje natural empático y preciso</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Respuestas en menos de 1 segundo</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN SISTEMAS DESARROLLADOS (RRHH & INVENTARIO) -->
+  <section id="sistemas" class="py-24 bg-dark-900/60 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <span class="text-xs uppercase tracking-widest text-brand-400 font-mono font-bold">SOFTWARE DE GESTIÓN EMPRESARIAL</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Sistemas Desarrollados a Medida</h2>
+        <p class="text-slate-400 text-sm sm:text-base">Plataformas web centralizadas que resuelven los problemas reales de dotación, turnos y control de equipamiento.</p>
+      </div>
+
+      <!-- Sistema 1: Gestión de RRHH & Personal -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-dark-900 rounded-3xl p-6 sm:p-10 border border-slate-800">
+        <div class="lg:col-span-6 space-y-4">
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-brand-500/10 text-brand-400 border border-brand-500/20 font-mono">SISTEMA RRHH & GESTIÓN DE PERSONAL</span>
+          <h3 class="text-2xl sm:text-3xl font-bold text-white">Administración Completa de Dotación, Permisos & Turnos</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Plataforma web donde funcionarios y colaboradores tramitan permisos administrativos, reemplazos y solicitudes con firma digital y flujos de aprobación jerárquica en tiempo real.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-300 pt-2">
+            <div class="p-3 bg-dark-950 rounded-xl border border-slate-800">
+              <strong class="text-white block mb-1 flex items-center gap-1.5"><i data-lucide="calendar-check" class="w-4 h-4 text-emerald-400"></i> Días Administrativos</strong>
+              Cálculo automático de saldos de días disponibles y topes anuales.
+            </div>
+            <div class="p-3 bg-dark-950 rounded-xl border border-slate-800">
+              <strong class="text-white block mb-1 flex items-center gap-1.5"><i data-lucide="file-text" class="w-4 h-4 text-brand-400"></i> Decretos Automáticos</strong>
+              Generación de resoluciones y minutas listas para firma.
+            </div>
+            <div class="p-3 bg-dark-950 rounded-xl border border-slate-800">
+              <strong class="text-white block mb-1 flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-purple-400"></i> Aprobación 1-Clic</strong>
+              Directores y jefes aprueban solicitudes directo desde el teléfono.
+            </div>
+            <div class="p-3 bg-dark-950 rounded-xl border border-slate-800">
+              <strong class="text-white block mb-1 flex items-center gap-1.5"><i data-lucide="lock" class="w-4 h-4 text-cyan-400"></i> Seguridad 2FA</strong>
+              Autenticación de doble factor para máxima confidencialidad.
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="bg-slate-950 rounded-2xl p-5 border border-slate-700 shadow-2xl space-y-4 font-sans">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-xs">
+              <span class="font-mono text-white font-bold flex items-center gap-2">
+                <i data-lucide="users" class="w-4 h-4 text-brand-400"></i> PORTAL RRHH & DOTACIÓN
+              </span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-brand-500/10 text-brand-400 border border-brand-500/20">OPERATIVO</span>
+            </div>
+
+            <div class="space-y-2.5 text-xs">
+              <div class="bg-dark-900 p-3 rounded-xl border border-slate-800 flex items-center justify-between">
+                <div>
+                  <p class="font-bold text-white">Solicitud Permiso Administrativo #409</p>
+                  <p class="text-[11px] text-slate-400">Funcionario: Dra. Camila Soto &middot; Fecha: 04/09/2026</p>
+                </div>
+                <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">APROBADO</span>
+              </div>
+
+              <div class="bg-dark-900 p-3 rounded-xl border border-slate-800 flex items-center justify-between">
+                <div>
+                  <p class="font-bold text-white">Reemplazo de Turno Urgencia #410</p>
+                  <p class="text-[11px] text-slate-400">Chofer: Juan Morales &rarr; Reemplaza: Roberto Silva</p>
+                </div>
+                <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30">PENDIENTE FIRMA</span>
+              </div>
+
+              <div class="p-3 bg-brand-950/40 rounded-xl border border-brand-500/20 text-[11px] text-brand-300 flex items-center justify-between font-mono">
+                <span>Total Dotación Activa: 148</span>
+                <span class="text-emerald-400">100% Planificada</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sistema 2: Gestión de Inventario & Activos con QR -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-dark-900 rounded-3xl p-6 sm:p-10 border border-slate-800">
+        <div class="lg:col-span-6 order-2 lg:order-1">
+          <div class="bg-slate-950 rounded-2xl p-5 border border-slate-700 shadow-2xl space-y-4 font-sans">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-xs">
+              <span class="font-mono text-white font-bold flex items-center gap-2">
+                <i data-lucide="boxes" class="w-4 h-4 text-emerald-400"></i> INVENTARIO & ACTIVOS QR
+              </span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">ESCÁNER ACTIVO</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 text-xs">
+              <div class="bg-dark-900 p-3 rounded-xl border border-slate-800 text-center">
+                <span class="text-[10px] text-slate-400 uppercase font-mono">Equipos Etiquetados</span>
+                <p class="text-xl font-bold text-white font-mono mt-1">1,240</p>
+                <span class="text-[10px] text-emerald-400">Con Código QR</span>
+              </div>
+              <div class="bg-dark-900 p-3 rounded-xl border border-slate-800 text-center">
+                <span class="text-[10px] text-slate-400 uppercase font-mono">Mantenciones al Día</span>
+                <p class="text-xl font-bold text-brand-400 font-mono mt-1">98.5%</p>
+                <span class="text-[10px] text-slate-400">Alertas activas</span>
+              </div>
+            </div>
+
+            <div class="bg-dark-900 p-3.5 rounded-xl border border-slate-800 space-y-2 text-xs">
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-white flex items-center gap-1.5"><i data-lucide="qr-code" class="w-4 h-4 text-emerald-400"></i> EQ-2026-KYOCERA-09</span>
+                <span class="text-[10px] font-mono bg-emerald-950 text-emerald-300 px-2 py-0.5 rounded border border-emerald-800">OPERATIVO</span>
+              </div>
+              <div class="text-[11px] text-slate-300 font-mono space-y-0.5">
+                <p>&bull; Equipo: Impresora Multifuncional Kyocera ECOSYS</p>
+                <p>&bull; Asignada a: Administración Box 3</p>
+                <p>&bull; Historial: Mantención preventiva realizada OK</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 order-1 lg:order-2 space-y-4">
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 font-mono">CONTROL DE ACTIVOS & BODEGA</span>
+          <h3 class="text-2xl sm:text-3xl font-bold text-white">Inventario Inteligente con Trazabilidad & Códigos QR</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Elimina pérdidas de herramientas, insumos o computadores. Cada activo cuenta con su propio código QR para escanear en segundos desde el celular, asignando responsables y controlando historiales técnicos.
+          </p>
+          <div class="space-y-2 text-xs text-slate-300 font-mono">
+            <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Generación automática de etiquetas QR para imprimir.</div>
+            <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Trazabilidad total: quién tiene el equipo y en qué oficina está.</div>
+            <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Notificación automática de stock crítico en bodegas.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN EXCEL & AUDITORÍA CON IA -->
+  <section id="excel-ia" class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.1),transparent_70%)]"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-16">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold font-mono">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+            <span>EXCEL CON INTELIGENCIA ARTIFICIAL</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Manejo y Auditoría de Excel con IA: <br/>
+            <span class="gradient-text">Miles de Filas Analizadas en Segundos</span>
+          </h2>
+
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Olvídate de revisar fórmulas rotas o buscar errores manuales en planillas gigantescas. Desarrollamos scripts y motores de IA que leen, cruzan, limpian y auditan bases de datos complejas al instante.
+          </p>
+
+          <div class="space-y-3 text-sm text-slate-300">
+            <div class="flex items-start gap-3 p-3.5 rounded-xl bg-dark-900 border border-slate-800">
+              <i data-lucide="database" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="text-white block text-xs sm:text-sm">Cruce Masivo y Deduplicación</strong>
+                <p class="text-xs text-slate-400 mt-0.5">Unificación de planillas dispersas en una sola base limpia sin registros duplicados.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3.5 rounded-xl bg-dark-900 border border-slate-800">
+              <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="text-white block text-xs sm:text-sm">Detección de Inconsistencias & Auditoría</strong>
+                <p class="text-xs text-slate-400 mt-0.5">Auditoría automática de datos para detectar descuadres de horas, errores en pagos o anomalías.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3.5 rounded-xl bg-dark-900 border border-slate-800">
+              <i data-lucide="file-output" class="w-5 h-5 text-brand-400 shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="text-white block text-xs sm:text-sm">Reportes Ejecutivos Automáticos</strong>
+                <p class="text-xs text-slate-400 mt-0.5">Transformación de datos crudos en resúmenes con gráficos listos para gerencia o auditorías.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="gradient-border shadow-2xl">
+            <div class="bg-dark-900 rounded-2xl p-6 space-y-4 border border-slate-700/60 font-mono text-xs">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-slate-400">
+                <span class="flex items-center gap-2 text-emerald-400 font-bold">
+                  <i data-lucide="file-spreadsheet" class="w-4 h-4"></i> PROCESADOR EXCEL IA &middot; TIEMPO REAL
+                </span>
+                <span class="text-[10px] text-slate-500">Python + IA Engine</span>
+              </div>
+
+              <div class="space-y-2 bg-slate-950 p-4 rounded-xl border border-slate-800">
+                <p class="text-slate-400">&gt; Cargando: <span class="text-white">registro_general_2026.xlsx</span> (48,290 filas)...</p>
+                <p class="text-emerald-400">&gt; Ejecutando validación y cruce masivo...</p>
+                
+                <div class="p-3 bg-dark-900 rounded-lg border border-slate-800 space-y-1 text-[11px] text-slate-300">
+                  <div class="flex justify-between text-slate-400">
+                    <span>&bull; Filas procesadas:</span> <strong class="text-white">48,290</strong>
+                  </div>
+                  <div class="flex justify-between text-slate-400">
+                    <span>&bull; Duplicados corregidos:</span> <strong class="text-amber-400">312</strong>
+                  </div>
+                  <div class="flex justify-between text-slate-400">
+                    <span>&bull; Tiempo de ejecución:</span> <strong class="text-emerald-400">2.14 segundos</strong>
+                  </div>
+                </div>
+
+                <p class="text-emerald-400 pt-1">&gt; Archivo consolidado guardado: <span class="text-white underline">informe_auditado.xlsx</span></p>
+              </div>
+
+              <div class="p-3 bg-emerald-950/40 rounded-xl border border-emerald-500/20 text-emerald-300 text-[11px] flex items-center justify-between font-sans">
+                <span class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Reducción de días de trabajo manual a 2 segundos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN CREATIVA: INFLUENCERS & MEDIA IA -->
+  <section id="ia-creative" class="py-24 bg-dark-900/60 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20 font-mono">LABORATORIO CREATIVO & IA GENERATIVA</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Modelos Virtuales, Producción Musical & Redes Sociales</h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Construimos la identidad digital de tu marca: modelos fotorrealistas generadas con IA, producción musical con pistas propias (G-Funk, Rap, Blues) y automatización de redes sociales.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-dark-900 rounded-2xl p-6 border border-purple-500/30 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center">
+            <i data-lucide="user-check" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white">Modelos & Embajadoras Virtuales</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Diseño de personajes con consistencia facial 100% fotorrealista para catálogos, modelaje y campañas publicitarias en Instagram o TikTok.
+          </p>
+        </div>
+
+        <div class="bg-dark-900 rounded-2xl p-6 border border-brand-500/30 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center">
+            <i data-lucide="music" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white">Producción Musical & Audio IA</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Composición de instrumentales y canciones completas con letras personalizadas y voces sintéticas profesionales para spots, jingles y reels.
+          </p>
+        </div>
+
+        <div class="bg-dark-900 rounded-2xl p-6 border border-emerald-500/30 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+            <i data-lucide="share-2" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white">Gestión & Bots para Redes</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Parrillas de contenido visual y conexión directa de bots en Instagram y WhatsApp para cerrar ventas y atender clientes 24/7.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INFRAESTRUCTURA & MONTAJE -->
+  <section id="infraestructura" class="py-24 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold font-mono">
+            <span>INFRAESTRUCTURA & HARDWARE</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Montaje de Redes, Servidores & Continuidad Operativa
+          </h2>
+
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            El software y la IA necesitan una base física impecable. Diseñamos e instalamos racks ordenados, cableado estructurado, redes Wi-Fi de alta densidad y mantención técnica especializada de impresoras y computadores.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="bg-dark-900 p-4 rounded-xl border border-slate-800">
+              <i data-lucide="server" class="w-5 h-5 text-purple-400 mb-2"></i>
+              <h4 class="text-sm font-bold text-white">Racks & Servidores</h4>
+              <p class="text-xs text-slate-400 mt-1">Armado limpio, patch panels y configuración de servidores locales/nube.</p>
+            </div>
+            <div class="bg-dark-900 p-4 rounded-xl border border-slate-800">
+              <i data-lucide="wifi" class="w-5 h-5 text-brand-400 mb-2"></i>
+              <h4 class="text-sm font-bold text-white">Wi-Fi Corporativo</h4>
+              <p class="text-xs text-slate-400 mt-1">Redes de alta densidad sin caídas y segmentadas con VLANs seguras.</p>
+            </div>
+            <div class="bg-dark-900 p-4 rounded-xl border border-slate-800">
+              <i data-lucide="printer" class="w-5 h-5 text-amber-400 mb-2"></i>
+              <h4 class="text-sm font-bold text-white">Mantención Impresoras & PCs</h4>
+              <p class="text-xs text-slate-400 mt-1">Soporte técnico especializado en equipos Kyocera, Brother, Epson y HP.</p>
+            </div>
+            <div class="bg-dark-900 p-4 rounded-xl border border-slate-800">
+              <i data-lucide="shopping-cart" class="w-5 h-5 text-emerald-400 mb-2"></i>
+              <h4 class="text-sm font-bold text-white">Asesoría de Compras TI</h4>
+              <p class="text-xs text-slate-400 mt-1">Cotizaciones técnicas precisas para no gastar de más en hardware innecesario.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="bg-gradient-to-tr from-slate-900 to-dark-900 rounded-3xl p-8 border border-slate-700/60 shadow-2xl relative overflow-hidden">
+            <div class="space-y-4">
+              <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                <i data-lucide="shield-check" class="w-5 h-5 text-emerald-400"></i> Garantía Técnica & Cercanía Local
+              </h3>
+              
+              <div class="space-y-3 text-sm text-slate-300">
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-dark-950/60 border border-slate-800">
+                  <i data-lucide="map-pin" class="w-5 h-5 text-brand-400 shrink-0 mt-0.5"></i>
+                  <div>
+                    <strong class="text-white block">Presencia en Chillán y todo Ñuble</strong>
+                    Atención presencial rápida. Trato directo y soluciones en terreno.
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-dark-950/60 border border-slate-800">
+                  <i data-lucide="lock" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+                  <div>
+                    <strong class="text-white block">Privacidad Absoluta de Datos</strong>
+                    Tus sistemas y bases de datos se mantienen bajo estrictos protocolos de confidencialidad y servidores protegidos.
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-dark-950/60 border border-slate-800">
+                  <i data-lucide="code-2" class="w-5 h-5 text-purple-400 shrink-0 mt-0.5"></i>
+                  <div>
+                    <strong class="text-white block">Desarrollo Propio sin Intermediarios</strong>
+                    Trato directo con el ingeniero que diseña, programa e instala las soluciones en tu empresa.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA / CONTACTO DIRECTO -->
+  <section id="contacto" class="py-24 bg-gradient-to-b from-dark-950 via-dark-900 to-dark-950 border-t border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 text-center space-y-6">
+      <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 font-mono">
+        HABLEMOS DE TU PROYECTO
+      </span>
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+        ¿Quieres Blindar tu Empresa con Ciberseguridad o Automatizarla con IA?
+      </h2>
+      <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+        Conversemos directamente. Evaluamos la seguridad de tus redes y los cuellos de botella de tu organización para implementar soluciones que funcionan de inmediato.
+      </p>
+      
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/56900000000?text=Hola,%20me%20gustar%C3%ADa%20evaluar%20una%20soluci%C3%B3n%20en%20Ciberseguridad,%20IA%20o%20Sistemas%20para%20mi%20empresa" target="_blank" class="w-full sm:w-auto flex items-center justify-center space-x-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-emerald-500/20 transition-all transform hover:-translate-y-1">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          <span>Escríbeme por WhatsApp</span>
+        </a>
+        <a href="mailto:contacto@tudominio.cl" class="w-full sm:w-auto flex items-center justify-center space-x-2 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-8 py-4 rounded-2xl transition-all">
+          <i data-lucide="mail" class="w-5 h-5"></i>
+          <span>Enviar Correo</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 bg-dark-950 border-t border-slate-800 text-center text-xs text-slate-500 font-mono">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>&copy; 2026 TI &bull; Experto en IA &bull; Ciberseguridad &bull; Chillán, Región de Ñuble</div>
+      <div class="text-slate-400">Defensa Digital &bull; 2FA &bull; Agentes Autónomos &bull; Excel IA</div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
